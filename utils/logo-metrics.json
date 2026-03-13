@@ -1,0 +1,33 @@
+{
+  "ccc-logo-full.svg": {
+    "path": "/logos/ccc-logo-full.svg",
+    "width": 66,
+    "height": 54,
+    "offsetX": 1.5,
+    "offsetY": -3.5
+  },
+  "logo-reasonable-faith-blue_1.svg": {
+    "path": "/logos/logo-reasonable-faith-blue_1.svg",
+    "link": "https://reasonablefaith.org/",
+    "width": 200,
+    "height": 39,
+    "offsetX": -13.9,
+    "offsetY": -1.3
+  },
+  "ratio-christi-campus-apologetics-retina-dark.svg": {
+    "path": "/logos/ratio-christi-campus-apologetics-retina-dark.svg",
+    "link": "https://ratiochristi.org/",
+    "width": 137,
+    "height": 36,
+    "offsetX": -10.4,
+    "offsetY": -0.6
+  },
+  "saft-typeform.svg": {
+    "path": "/logos/saft-typeform.svg",
+    "link": "https://saftapologetics.com",
+    "width": 160,
+    "height": 27,
+    "offsetX": 5,
+    "offsetY": -0.5
+  }
+}
