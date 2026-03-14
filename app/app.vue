@@ -103,11 +103,11 @@ const { arrivedState } = useScroll(faqDiv);
         </div>
 
         <!-- Footer -->
-        <footer class="p-4">
-          <p class="text-center text-sm mb-6">
+        <footer class="p-6 pb-10">
+          <p class="text-center text-sm mb-8">
             Confident Christian Conversations
           </p>
-          <div class="flex flex-col items-center gap-6">
+          <div class="flex flex-col items-center gap-8">
             <a
               v-for="logo in logoArr"
               :key="logo.path"
@@ -115,7 +115,7 @@ const { arrivedState } = useScroll(faqDiv);
               class="block"
             >
               <img
-                class="brightness-0 invert h-8"
+                class="brightness-0 invert w-40 h-auto object-contain"
                 :src="logo.path"
                 :alt="logo.link"
               />
