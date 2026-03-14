@@ -46,9 +46,9 @@ const { arrivedState } = useScroll(faqDiv);
     </nav>
 
     <main class="flex-1 min-h-0 grid grid-cols-[1.2fr,2fr] grid-rows-[2fr,3fr]">
-      <div class="border-b border-r grid col-start-1 row-start-1">
+      <div class="border-b border-r grid col-start-1 row-start-1 p-4">
         <h1
-          class="font-joyride text-white text-7xl uppercase place-self-center"
+          class="font-joyride text-white tagline-text uppercase place-self-center"
         >
           <span class="stretch-125">T</span>
           <span class="stretch-115">h</span>i<span class="stretch-125"
@@ -60,11 +60,11 @@ const { arrivedState } = useScroll(faqDiv);
         </h1>
       </div>
 
-      <article class="col-start-1 row-start-2 border-r p-8 overflow-y-auto">
-        <h2 class="text-3xl font-semibold pb-2">
+      <article class="col-start-1 row-start-2 border-r p-4 lg:p-6 overflow-y-auto min-h-0 flex flex-col">
+        <h2 class="text-lg lg:text-2xl font-semibold pb-2 shrink-0">
           What is Confident Christian Conversations?
         </h2>
-        <p>
+        <p class="text-xs lg:text-sm leading-relaxed">
           Confident Christian Conversations is a synergised, official
           partnership between 3 ministries that share the passion for
           apologetics in India. Through a first-of-its-kind free, accessible,
@@ -78,7 +78,7 @@ const { arrivedState } = useScroll(faqDiv);
       </article>
 
       <article class="col-start-2 col-end-3 row-start-1 row-end-3 flex flex-col min-h-0">
-        <h2 class="text-5xl border-b px-8 py-4 text-right shrink-0">FAQs</h2>
+        <h2 class="text-3xl lg:text-5xl border-b px-4 lg:px-8 py-3 lg:py-4 text-right shrink-0">FAQs</h2>
 
         <section class="grid grid-cols-2 flex-1 min-h-0">
           <div
@@ -91,13 +91,13 @@ const { arrivedState } = useScroll(faqDiv);
               v-for="(faq, idx) in faqs"
               :key="faq.question"
               :data-selected="selectedQuestion === idx"
-              class="border-b w-full text-left px-5 py-3 text-white text-xl data-[selected=true]:bg-white data-[selected=true]:text-black"
+              class="border-b w-full text-left px-3 lg:px-5 py-2 lg:py-3 text-white text-sm lg:text-xl data-[selected=true]:bg-white data-[selected=true]:text-black"
               @click="selectedQuestion = idx"
             >
               {{ faq.question }}
             </button>
           </div>
-          <div class="border-l p-5 text-lg overflow-y-auto">
+          <div class="border-l p-3 lg:p-5 text-sm lg:text-lg overflow-y-auto">
             <p>{{ faqs[selectedQuestion]?.answer }}</p>
           </div>
         </section>
@@ -105,7 +105,7 @@ const { arrivedState } = useScroll(faqDiv);
     </main>
 
     <footer
-      class="border-t text-2xl text-center px-8 py-5 flex justify-between items-center h-[80px] shrink-0"
+      class="border-t text-sm lg:text-2xl text-center px-4 lg:px-8 py-3 lg:py-5 flex justify-between items-center h-[60px] lg:h-[80px] shrink-0"
     >
       Confident Christian Conversations
 
@@ -157,6 +157,11 @@ const { arrivedState } = useScroll(faqDiv);
 
 .font-manrope {
   font-family: "Manrope", sans-serif;
+}
+
+.tagline-text {
+  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
+  line-height: 1.1;
 }
 
 .font-joyride {
