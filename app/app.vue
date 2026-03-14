@@ -11,7 +11,9 @@ const { arrivedState } = useScroll(faqDiv);
 </script>
 
 <template>
-  <div class="text-white border-white font-manrope h-screen flex flex-col overflow-hidden">
+  <div
+    class="text-white border-white font-manrope h-screen flex flex-col overflow-hidden"
+  >
     <div
       class="w-full h-screen flex flex-col items-center justify-center brightness-50 -z-10 absolute inset-0 overflow-hidden"
     >
@@ -25,7 +27,9 @@ const { arrivedState } = useScroll(faqDiv);
       </video>
     </div>
 
-    <nav class="border-b flex justify-between px-8 gap-10 items-center h-[100px] shrink-0">
+    <nav
+      class="border-b flex justify-between px-8 gap-10 items-center h-[100px] shrink-0"
+    >
       <img
         class="brightness-0 invert"
         :src="ccc.path"
@@ -51,34 +55,40 @@ const { arrivedState } = useScroll(faqDiv);
           class="font-joyride text-white tagline-text uppercase place-self-center"
         >
           <span class="stretch-125">T</span>
-          <span class="stretch-115">h</span>i<span class="stretch-125"
-            >n</span
-          >
+          <span class="stretch-115">h</span>i<span class="stretch-125">n</span>
           <span class="stretch-125">k</span>.<br />
           Believe.<br />
           Defen<span class="stretch-115">d</span>.
         </h1>
       </div>
 
-      <article class="col-start-1 row-start-2 border-r p-4 lg:p-6 overflow-y-auto min-h-0 flex flex-col">
-        <h2 class="text-lg lg:text-2xl font-semibold pb-2 shrink-0">
+      <article
+        class="col-start-1 row-start-2 border-r p-4 lg:p-6 overflow-y-auto min-h-0 flex flex-col"
+      >
+        <h2 class="text-lg lg:text-3xl font-semibold pb-4 shrink-0">
           What is Confident Christian Conversations?
         </h2>
-        <p class="text-xs lg:text-sm leading-relaxed">
+        <p class="text-sm lg:text-lg leading-relaxed">
           Confident Christian Conversations is a synergised, official
           partnership between 3 ministries that share the passion for
           apologetics in India. Through a first-of-its-kind free, accessible,
           community driven and rigorous 6 month training programme in
-          partnership with Reasonable Faith and Ratio Christi, CCC is taking
-          on the challenge to build up a new line of Indian Christian
-          defenders who will be empowered and connected with global ministries
-          to have confident conversations about Christianity in India's
-          campuses, workspaces, churches and communities.
+          partnership with Reasonable Faith and Ratio Christi, CCC is taking on
+          the challenge to build up a new line of Indian Christian defenders who
+          will be empowered and connected with global ministries to have
+          confident conversations about Christianity in India's campuses,
+          workspaces, churches and communities.
         </p>
       </article>
 
-      <article class="col-start-2 col-end-3 row-start-1 row-end-3 flex flex-col min-h-0">
-        <h2 class="text-3xl lg:text-5xl border-b px-4 lg:px-8 py-3 lg:py-4 text-right shrink-0">FAQs</h2>
+      <article
+        class="col-start-2 col-end-3 row-start-1 row-end-3 flex flex-col min-h-0"
+      >
+        <h2
+          class="text-3xl lg:text-5xl border-b px-4 lg:px-8 py-3 lg:py-4 text-right shrink-0"
+        >
+          FAQs
+        </h2>
 
         <section class="grid grid-cols-2 flex-1 min-h-0">
           <div
@@ -105,9 +115,11 @@ const { arrivedState } = useScroll(faqDiv);
     </main>
 
     <footer
-      class="border-t text-sm lg:text-2xl text-center px-4 lg:px-8 py-3 lg:py-5 flex justify-between items-center h-[60px] lg:h-[80px] shrink-0"
+      class="border-t px-4 lg:px-8 py-3 lg:py-5 flex justify-between items-center h-[60px] lg:h-[80px] shrink-0"
     >
-      Confident Christian Conversations
+      <span class="footer-title whitespace-nowrap"
+        >Confident Christian Conversations</span
+      >
 
       <div class="flex gap-10">
         <a
@@ -160,8 +172,12 @@ const { arrivedState } = useScroll(faqDiv);
 }
 
 .tagline-text {
-  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
+  font-size: clamp(1.5rem, 3.5vw + 0.5rem, 3.5rem);
   line-height: 1.1;
+}
+
+.footer-title {
+  font-size: clamp(0.75rem, 1.5vw + 0.25rem, 1.5rem);
 }
 
 .font-joyride {
