@@ -11,7 +11,7 @@ const { arrivedState } = useScroll(faqDiv);
 </script>
 
 <template>
-  <div class="text-white border-white font-manrope h-screen">
+  <div class="text-white border-white font-manrope">
     <div
       class="w-full h-screen flex flex-col items-center justify-center brightness-50 -z-10 absolute inset-0"
     >
@@ -25,8 +25,8 @@ const { arrivedState } = useScroll(faqDiv);
       </video>
     </div>
 
-    <main>
-      <nav class="border-b flex p-5 gap-10 align-center">
+    <main class="h-screen grid grid-cols-1 grid-rows-[100px,1fr,130px]">
+      <nav class="border-b flex justify-between px-8 gap-10 items-center">
         <img
           class="brightness-0 invert"
           :src="ccc.path"
@@ -37,22 +37,12 @@ const { arrivedState } = useScroll(faqDiv);
           }"
           alt="Confident Christian Conversations"
         />
-        <div class="flex-grow" />
+
         <a
-          v-for="logo in logoArr"
-          :key="logo.path"
-          :href="logo.link"
-          class="contents"
+          class="rounded-full text-xl bg-white px-7 py-3 text-black"
+          href="https://tally.so/r/eqBXaJ"
         >
-          <img
-            class="brightness-0 invert"
-            :src="logo.path"
-            :width="logo.width"
-            :height="logo.height"
-            :style="{
-              transform: `translate(${logo.offsetX}px, ${logo.offsetY}px)`,
-            }"
-          />
+          Apply Now
         </a>
       </nav>
 
@@ -94,7 +84,7 @@ const { arrivedState } = useScroll(faqDiv);
           <section class="grid grid-cols-2">
             <div
               ref="faq-div"
-              class="faq-questions overflow-y-auto overflow-x-hidden h-[800px]"
+              class="faq-questions overflow-y-auto overflow-x-hidden"
               :data-fade-top="!arrivedState.top"
               :data-fade-bottom="!arrivedState.bottom"
             >
@@ -116,8 +106,29 @@ const { arrivedState } = useScroll(faqDiv);
       </section>
     </main>
 
-    <footer class="border-t text-2xl text-center p-4">
+    <footer
+      class="border-t text-2xl text-center px-8 py-5 flex justify-between"
+    >
       Confident Christian Conversations
+
+      <div class="flex gap-10">
+        <a
+          v-for="logo in logoArr"
+          :key="logo.path"
+          :href="logo.link"
+          class="contents"
+        >
+          <img
+            class="brightness-0 invert"
+            :src="logo.path"
+            :width="logo.width"
+            :height="logo.height"
+            :style="{
+              transform: `translate(${logo.offsetX}px, ${logo.offsetY}px)`,
+            }"
+          />
+        </a>
+      </div>
     </footer>
   </div>
 </template>
