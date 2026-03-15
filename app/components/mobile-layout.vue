@@ -19,12 +19,21 @@ const selectedQuestion = ref<number>(0);
         :src="ccc.path"
         alt="Confident Christian Conversations"
       />
-      <a
-        class="rounded-full text-sm bg-white px-4 py-2 text-black whitespace-nowrap no-underline"
-        href="https://tally.so/r/eqBXaJ"
-      >
-        Apply Now
-      </a>
+      <div class="flex gap-2 items-center">
+        <a
+          class="rounded-full text-sm border border-white px-3 py-2 text-white whitespace-nowrap no-underline"
+          href="https://us02web.zoom.us/meeting/register/nnhB0JoPS1ipkD7OLlojEQ"
+          target="_blank"
+        >
+          Briefing
+        </a>
+        <a
+          class="rounded-full text-sm bg-white px-4 py-2 text-black whitespace-nowrap no-underline"
+          href="https://tally.so/r/eqBXaJ"
+        >
+          Apply Now
+        </a>
+      </div>
     </nav>
 
     <!-- Scrollable content -->

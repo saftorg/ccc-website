@@ -27,12 +27,21 @@ const { arrivedState } = useScroll(faqDiv);
         alt="Confident Christian Conversations"
       />
 
-      <a
-        class="rounded-full text-xl bg-white px-7 py-3 text-black no-underline"
-        href="https://tally.so/r/eqBXaJ"
-      >
-        Apply Now
-      </a>
+      <div class="flex gap-4 items-center">
+        <a
+          class="rounded-full text-xl border border-white px-7 py-3 text-white no-underline hover:bg-white/10 transition-colors"
+          href="https://us02web.zoom.us/meeting/register/nnhB0JoPS1ipkD7OLlojEQ"
+          target="_blank"
+        >
+          Briefing Session
+        </a>
+        <a
+          class="rounded-full text-xl bg-white px-7 py-3 text-black no-underline"
+          href="https://tally.so/r/eqBXaJ"
+        >
+          Apply Now
+        </a>
+      </div>
     </nav>
 
     <main class="flex-1 min-h-0 grid grid-cols-[1.2fr,2fr] grid-rows-[2fr,3fr]">
