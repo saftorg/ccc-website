@@ -12,7 +12,7 @@ const selectedQuestion = ref<number>(0);
   <div class="md:hidden min-h-screen flex flex-col">
     <!-- Nav -->
     <nav
-      class="border-b flex justify-between px-4 gap-4 items-center h-[60px] shrink-0"
+      class="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b flex justify-between px-4 gap-4 items-center h-[60px]"
     >
       <img
         class="brightness-0 invert h-8"
@@ -37,7 +37,7 @@ const selectedQuestion = ref<number>(0);
     </nav>
 
     <!-- Scrollable content -->
-    <main class="flex-1 overflow-y-auto">
+    <main class="flex-1 overflow-y-auto pt-[60px]">
       <!-- Description -->
       <article class="p-4 border-b">
         <h2 class="text-xl font-semibold pb-3">
