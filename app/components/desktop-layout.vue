@@ -35,12 +35,11 @@ const { arrivedState } = useScroll(faqDiv);
         >
           Briefing Session
         </a>
-        <a
-          class="rounded-full text-xl bg-white px-7 py-3 text-black no-underline"
-          href="https://tally.so/r/eqBXaJ"
+        <span
+          class="rounded-full text-xl bg-white/20 px-7 py-3 text-white/60 no-underline cursor-not-allowed"
         >
-          Apply Now
-        </a>
+          Applications Closed
+        </span>
       </div>
     </nav>
 

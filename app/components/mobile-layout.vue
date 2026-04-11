@@ -27,12 +27,11 @@ const selectedQuestion = ref<number>(0);
         >
           Briefing
         </a>
-        <a
-          class="rounded-full text-sm bg-white px-4 py-2 text-black whitespace-nowrap no-underline"
-          href="https://tally.so/r/eqBXaJ"
+        <span
+          class="rounded-full text-sm bg-white/20 px-4 py-2 text-white/60 whitespace-nowrap no-underline cursor-not-allowed"
         >
-          Apply Now
-        </a>
+          Applications Closed
+        </span>
       </div>
     </nav>
 
